@@ -35,6 +35,8 @@ Untuk contoh/sample format paper yang pernah saya buat, silahkan langsung ke TKP
  
 Nantinya juga akan (iseng) saya buatkan yang format skripsi A5 (untuk anak PENS sih, nanti bisa di-modify sendiri).
 
+Oya, jika ada yang mau membantu kontribusi / share bareng, monggo, japri aja.
+
 Semoga Bermanfaat!
 
 CMIIW Miaow
