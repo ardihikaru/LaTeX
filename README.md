@@ -10,17 +10,17 @@ Kebutuhan Spesifikasi Hardware:
 - tidak begitu spesifik. (program editor + library-nya tidak begitu berat)
 
 Kebutuhan Spesifikasi Software:
-- Library untuk LaTeX: https://miktex.org/
+- Library untuk LaTeX (WAJIB): https://miktex.org/ -	192.72 MB
   Download saja versi basic.
   Leptop saya 64-bit, jadi pilih yang: Basic MiKTeX Installer, 64-bit (https://miktex.org/download)
 - Editor:
--- Alternatif 1: TexMaker (http://www.xm1math.net/texmaker/)
+-- Alternatif 1: TexMaker (http://www.xm1math.net/texmaker/) - 56.8 Mb
     Pertama kali belajar menggunakan LaTeX, saya dulu menggunakan editor ini. Lumayan 'enteng', dibandingkan dengan editor tetangga (TeXnicCenter)
     > Pros: 
       - enteng
       - hasil compile, bisa langsung menunjukkan hasil paper (e.g. PDF) di layar editor (Default: splitted left & right screen)
     > Cons:
-      - fitur lebih sedikit dibandingkan dengan editor tetangga (TeXnicCenter)
+      - fitur lebih sedikit dibandingkan dengan editor tetangga (TeXnicCenter) - 12.3 Mb
       - adanya tambahan / perubahan library/plugin, terkadang membuat paper kita tidak bisa di-compile / error while compiling: Solusinya coba compile dengan editor tetangga (TeXnicCenter)
 -- Alternatif 2: TeXnicCenter (http://www.texniccenter.org/)
     Selama kuliah, saya beberapa kali ganti-ganti format paper (setiap conference/journal, terkadang memiliki template tersendiri - yg tinggal download -). Namanya juga belajaran, untuk pemilihan library/plugin, juga harus disesuaikan dengan template yang sedang dipakai. Nge-compile dengan editor ini terkadang bisa membuahkan solusi (harus di-re-compile beberapa kali untuk tiap kali compile).
