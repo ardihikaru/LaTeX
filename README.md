@@ -13,6 +13,10 @@ Kebutuhan Spesifikasi Software:
 - Library untuk LaTeX (WAJIB): https://miktex.org/ -	192.72 MB
   Download saja versi basic.
   Leptop saya 64-bit, jadi pilih yang: Basic MiKTeX Installer, 64-bit (https://miktex.org/download)
+- Converter JPEG/JPG/PNG/<<...>> ke format EPS
+  Sebenarnya banyak sih converter untuk yg semacam ini, namun rata-rata hasil konversinya berukuran besar (e.g. Photoshop). Berikut bisa dijadikan referensi.
+  - Alternatif 1: Versi online, ini link favorit saya: http://www.tlhiv.org/rast2vec/
+  - Alternatif 2: (lupa namanya, nyusul)
 - Editor:
 -- Alternatif 1: TexMaker (http://www.xm1math.net/texmaker/) - 56.8 Mb
     Pertama kali belajar menggunakan LaTeX, saya dulu menggunakan editor ini. Lumayan 'enteng', dibandingkan dengan editor tetangga (TeXnicCenter)
