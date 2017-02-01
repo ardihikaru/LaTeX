@@ -1,0 +1,65 @@
+\documentclass[12pt]{report}
+\usepackage{thesis}
+
+
+% Watermark
+\usepackage{draftwatermark}
+%\usepackage{amsmath}
+
+% Watermark
+\SetWatermarkText{\put(-200,100)
+{\includegraphics[width=0.13\textwidth,natwidth=50,natheight=50,
+angle=-45]{Logo.jpg}}}
+
+% FEBRIAN packages
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb} % for math : \geqslant
+
+\usepackage{url} %citation URL type
+\usepackage{relsize} % for math : \mathlarger
+
+%ben isok split: http://tex.stackexchange.com/questions/14673/pseudo-code-to-be-spread-over-multiple-pages
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{caption}
+
+\usepackage[noadjust]{cite}
+\graphicspath{{figures/}}
+
+\usepackage{multicol}
+\usepackage{multirow} % table multirow
+
+\usepackage{csquotes} % For the command \enquote
+
+% figures
+\usepackage{wrapfig}
+
+\usepackage{relsize} % for math : \mathlarger
+
+% FEBRIAN packages
+
+\begin{document}
+\include{1page} % Letter from the Thesis Advisor: Nothing to do here
+\include{2page} % Thesis/Dissertation Oral Defense Committee Certification: Nothing to do here
+\pagenumbering{roman}
+\setcounter{page}{3} % {chapter}{Contents}: Nothing to do here
+\include{ack} % DONE
+\include{abstract} % DONE
+\include{contents} % {Contents}: Nothing to do here
+\include{figures} % {figures}: Nothing to do here
+\include{tables} % {figures}: Nothing to do here
+%\include{subfigures}
+
+% NB: sesuaikan kebutuhan!
+\pagenumbering{arabic}
+\include{chap1} % Intro, motivation, goal, contrib., problem formulations.
+\include{chap2} % related work
+\include{chap3} % System Model
+\include{chap4} % Proposed Protocols
+\include{chap5} % Performance Evaluation
+\include{chap6} % Conclusion and future work
+\include{bib}
+
+\end{document}

@@ -23,6 +23,7 @@ Kebutuhan Spesifikasi Software:
     > Pros: 
       - enteng
       - hasil compile, bisa langsung menunjukkan hasil paper (e.g. PDF) di layar editor (Default: splitted left & right screen)
+	  - Note: saya lebih suka pakai editor ini. kalaupun ada error, nanti tinggal di compile pakai TeXnicCenter, kemudian balik memakai editor ini. :D
     > Cons:
       - fitur lebih sedikit dibandingkan dengan editor tetangga (TeXnicCenter) - 12.3 Mb
       - adanya tambahan / perubahan library/plugin, terkadang membuat paper kita tidak bisa di-compile / error while compiling: Solusinya coba compile dengan editor tetangga (TeXnicCenter)
@@ -35,6 +36,10 @@ Kebutuhan Spesifikasi Software:
       - lumayan berat. tapi fitur jauh lebih lengkap. 
       - selesai compile, hasilnya bentuk pop-up. lumayan annoying (menurut saya)
       
+Common issue:
+- Error ketika view pdf pakai TeXnicCenter.
+-- Solusi: simpel saja, re-install TeXnicCenter.
+
 Untuk contoh/sample format paper yang pernah saya buat, silahkan langsung ke TKP saja. Ada format conference sama journal. 
  
 Nantinya juga akan (iseng) saya buatkan yang format skripsi A5 (untuk anak PENS sih, nanti bisa di-modify sendiri).

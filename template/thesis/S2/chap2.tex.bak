@@ -1,0 +1,210 @@
+\chapter{Related Work}
+\label{chap:rltwrk} \hspace{0.7cm}In this chapter, previous related
+works of Channel Hopping (CH) mechanism are elaborated with their
+limitations. Our motivations from the related works and the
+contributions in thesis are discussed. \hspace{0.7cm}In DH-MAC
+(Dynamic Channel Hopping MAC)\cite{Ref2}, the number of available
+channel is always prime number. A broadcast mechanism is used to
+send beacon in each starting time of the slot index which  contains
+two CH parameters i.e. Hopping and Shifting parameters. Each SU
+receives the beacon from their neighbors and after that they can
+exchange the CH parameters accordingly to send  data packet from
+source to destination . Although DH-MAC can support multiple
+rendezvous, the MTTR value is very large, i.e.$|N| + 2$ with the
+under-utilization of channels, i.e. $\lessapprox33 \%$. Furthermore,
+in DH-MAC the channel loading is also large, i.e.$ 100 \% $,  which
+can cause collision in the network.
+
+\par The CH in multi hop environment is considered in \cite{Ref3}. The
+CH sequence consists of two parts i.e. Jump and Stay (JS). In Jump
+pattern, each SU jumps from one channel to another according to
+their sequence and in the Stay pattern it will stay in a particular
+channel for negotiation. MTTR value and ATTR in JS is very large
+specially in asymmetric synchronous environment, i.e. $N*3P$ and
+$\frac{(N*3P)+1}{2}$ respectively, which causes long waiting time
+for SU to establish the communication. Moreover, channel utilization
+is very less, i.e. $(\frac{(NP+1)}{M*T})*100\%, \lessapprox9.7\%$
+with large channel loading, i.e.$(\frac{M-1}{M})*100\%, 75\%$ which
+shown in Figure.~\ref{fig:JS} for N = 2.
+
+
+\munepsfig[0.60]{JS}{Rendezvous in JS for M = 4 and
+ N = 3.}\label{fig:JS}
+
+\par In\cite{Ref4}, Round Robin Indemnity Channel Hopping Sequence (RRICH)
+is purposed. Galois Field is used to generate CH sequence. Although,
+RRICH can guarantee the rendezvous in multi user and multi hop
+environment, the value of MTTR is very large, i.e. $N$ and also the
+value of ATTR, i.e. $\frac{(N+1)}{2}$ . The channel loading in RRICH
+is very high, i.e. $(\frac{M-1}{M})*100\%$. Furthermore, in RRICH
+the percentage of channel utilization is very less, i.e.
+$(\frac{(N^2)}{M*T})*100\%$. All the problem scenarios are clearly
+explained in Figure.~\ref{fig:RRICH} for N = 3.
+
+\munepsfig[0.60]{RRICH}{Rendezvous in RRICH for M = 3 and
+ N = 3.}\label{fig:RRICH}
+
+\par In\cite{Ref6}, MC (Modular Clock) is proposed for symmetric
+asynchronous approach. In MC, all types of numbers are used to
+generate the CH sequences. As shown in Figure.~\ref{fig:MC} for N =
+4, MTTR value in MC is very large, i.e, $MTTR = 2P$, the ATTR value
+is $\frac{2P+1}{2}$ and the MIRI value is $P-1$, where P is the
+prime number. Moreover, in MC, the channel are under-utilized, i.e.
+$(\frac{P}{M*T})*100\%, \lessapprox8\%$. The channel loading in MC
+is $(\frac{2}{N})*100\%$
+
+\munepsfig[0.60]{MC}{Rendezvous in MC for M = 4 and
+ N = 8.}\label{fig:MC}
+
+\par In\cite{Ref7}, a new CH protocol is
+designed for the symmetric asynchronous environment termed as
+Asyn-ETCH. This protocol can guarantee the rendezvous for all SUs by
+considering only prime number of available channels. The MTTR value
+of this protocol is $N*(2N+1)$ with MIRI = $2N$. Although this work
+can guarantee the rendezvous, but the channel utilization is very
+less,$\lessapprox15 \%$ with heavy channel loading $(\frac{N-
+1}{N})*100\%$, which can leads to collision.
+
+In \cite{Ref8} a cyclic quorum CH algorithm is proposed as L-QCH
+(Asynchronous Quorum Based Channel Hopping System). The channel
+utilization in this protocol is very less, i.e. $\lessapprox12\%$
+with large MTTR = $\textit{k}$, where $\textit{k}$ is the length of
+the frame. The channel loading of L-QCH is $(\frac{3}{N})*100\%$
+which can cause the collision in the network and also the MIRI of
+L-QCH is $2N$ which can cause the starvation problem
+\par
+
+One of two algorithms is proposed in [14] which is related to matrix
+based. D-CH is the algorithm which concerning of ID based. The
+generation of channel hopping sequence in D-CH algorithm is depend
+of the ID from each of SUs and the sequence consists of I-stay
+column, I-jump column and I-running column for asymmetric
+asynchronous environment . Hence, in D-CH all sequences are
+generated to be different among all SU. Although, in asynchronous
+environment D-CH are guarantee the rendezvous of any pairs of SUs ,
+due to the sequence, D-CH can lead to collision because it has very
+large value of channel loading, i.e. $(\frac{M}{M})*100\%$. Beside,
+MTTR is very large such as MTTR = $N^2+2N$. Hence, the value of ATTR
+and  MIRI also large, i.e. $\frac{(N^2+2N)+1}{2}$ and $2N^2$
+respectively, which shown in Figure.~\ref{fig:D-CH} for N = 3.
+Hence, the percentage of channel utilization is very less, i.e.
+$(\frac{N^2-1}{M*T})*100\%$.
+
+\munepsfig[0.60]{D-CH}{Rendezvous in D-CH for M = 3 and
+ N = 3.}\label{fig:D-CH}
+
+\par Another existing work related to matrix based is called QLCH [15]. In this
+work, they proposed quorum system and Latin squares as a distributed
+channel hopping protocol.  This protocol divides the slot into two
+part such as default slot and switching slot. This protocol
+described that when SUs act as a sender, it has to change the
+channel according to receiver channel in switching slot. Based on
+that, The degree of rendezvous is large and it is mention that they
+work can guarantee the rendezvous. Although, this work has a good
+achievement in term of degree of rendezvous, but in case of multi
+hop multi user environment and we consider multiple sender and
+receivers then this work can make cause many traffic and collision
+among all SUs
+
+\par The existing work of channel hopping in multi-hop environment also
+proposed in [16]  called BRACER. They proposed BRACER to provide
+very high successful delivery radio while achieving very short
+broadcast delay and can also avoid broadcast collisions considering
+the asymmetric environment  in the case of the number of available
+channels. In BRACER [16] protocol,  they proposed two algorithm
+based on the roles of the SUs such as broadcasting sequence for a
+sender and broadcasting sequence for a receiver. Although, this work
+can avoid the collision but if we consider multi sender, then in
+terms of time to rendezvous this work can cause longer waiting time
+for other SUs in the networks  which can lead this into the
+starvation problem.
+
+\section{Motivations and Contributions}
+\hspace{0.7cm}Based on the analysis of latest CH algorithms, it is
+analyzed that most of the proposed protocols are outperform in terms
+of  MTTR, channel loading, MIRI and channel utilization particularly
+in multi user multi hop environment. The limitations of the existing
+works are summarized as follows.
+
+\begin{itemize}
+\item Maximum Time To rendezvous (MTTR)\\
+In  \cite{Ref2}, \cite{Ref3}, \cite{Ref4}, \cite{Ref7}, \cite{Ref8},
+\cite{Ref15}, value of MTTR is greater and equal than $|N|$. In MC
+\cite{Ref6}, MTTR = 2P (where $P$ is smallest prime number $>N$).
+
+\item Channel Loading\\
+Channel loading is approximately 100\% in \cite{Ref2}, \cite{Ref4},
+\cite{Ref7}, \cite{Ref15}. In MC \cite{Ref6} and L-QCH \cite{Ref8},
+the value of channel loading is $\frac{2}{|N|}$ and $\frac{3}{|N|}$,
+respectively.
+
+\item Channel Utilization\\
+Most of the CH protocols are having poor performance in terms of
+channel utilization particularly in case of multi user multi hop
+environment. It is found that the channel utilization in
+\cite{Ref3}, \cite{Ref6}, \cite{Ref7}, \cite{Ref8} and \cite{Ref15}
+is $\lessapprox20\%$.  In DH-MAC \cite{Ref2} it is $\lessapprox33\%$
+where as  in RRICH \cite{Ref4}, the channel utilization is very
+less, i.e. $\lessapprox24\%$. Less utilization of available channels
+may cause starvation problem.
+
+\item Maximum Inter Rendezvous Interval (MIRI)\\
+MIRI is only intended for asynchronous environment. This value is
+very large in some existing works, such as \cite{Ref6}-\cite{Ref8}
+and \cite{Ref15}. In \cite{Ref6} the MIRI is $P-1$ where as in
+Asyn-ETCH \cite{Ref7}, in L-QCH \cite{Ref8} is $2N$ and in
+D-CH\cite{Ref15} is $2N^2$.
+
+\item Average Time To Rendezvous (ATTR)\\
+ATTR is determined the average time to rendezvous (TTR), which
+requires to rendezvous. This value is very large in some existing
+works, such as  \cite{Ref3}, \cite{Ref4}, \cite{Ref6} and
+\cite{Ref15}. In \cite{Ref3} the ATTR is $\frac{(N*3P)+1}{2}$ where
+as in RRICH \cite{Ref4} the ATTR = $\frac{(N+1)}{2}$, in MC
+\cite{Ref6} is $\frac{2P+1}{2}$ and in D-CH\cite{Ref15} is
+$\frac{(N^2+2N)+1}{2}$.
+
+\item Number of available channels\\
+Most of the existing works on Channel Hopping have limitations
+regarding number of available channel. In DH-MAC\cite{Ref3},
+Asyn-ETCH\cite{Ref7} and D-CH\cite{Ref15} the available number of
+channels is always a prime number. Prime power is used in
+RRICH\cite{Ref4} as the number of channels.
+\end{itemize}
+
+The main contributions of this thesis are as listed below:
+\begin{itemize}
+\item Maximum Time To Rendezvous (MTTR)\\
+MTTR value of  our MUSS protocol is $N-2$ for even number of SUs,
+$M=2N$ and $N-1$ for odd number of SUs, $M=2N+1$, the value of MTTR
+in Protocol 1 is $2N$, in Protocol 3 the MTTR value is
+$\frac{2N}{N}$ and the last is in Protocol 4, the MTTR value is
+$3(N+1)$ for N even number and $2(N+1)$ for N odd number, which is
+much better than the existing works, where $N$ is the number of
+available channels.
+\item Average Time To Rendezvous (MTTR)\\
+ATTR value of our works, is less than 3 for synchronous protocols
+(i.e. Protocol 1 and Protocol 3) and less than 8 for asynchronous
+protocols (i.e. Protocol 2 and Protocol 4).
+\item Channel Loading\\
+In our work, the percentage of channel loading for all four
+protocols are same, i.e. $(\frac{2}{M})*100\%$, better than
+\cite{Ref2}-\cite{Ref4} and \cite{Ref6}-\cite{Ref8} and also
+\cite{Ref15}
+\item Channel Utilization \\
+In all four protocols, channel utilization is $\lessapprox50\%$
+which is better than RRICH \cite{Ref4} for symmetric synchronous, MC
+\cite{Ref6} for symmetric asynchronous, JS \cite{Ref3} for
+asymmetric synchronous and D-CH \cite{Ref15} for asymmetric
+asynchronous protocol.
+\item Maximum Inter Rendezvous Interval (MIRI)\\
+In Protocol 2, our work has better performance for MIRI metric
+compared to other existing works such as MC in \cite{Ref6},
+Asyn-ETCH\cite{Ref7} and L-QCH\cite{Ref8}, the value is
+$\frac{2N}{N} = 2$ and in Protocol 4, the value of MIRI is $2(N+2)$
+for N = odd and  $3(N+1)$ for N =even. Hence, it can overcomes the
+starvation problem.
+\item Number of Available Channel\\
+All four protocols can work for any number of available channels,
+$|N| \geqslant 3 $
+\end{itemize}

@@ -1,0 +1,20 @@
+\chapter{Conclusions and Future Directions}
+\label{chap:conclsn}
+\section{Conclusions}
+ In this thesis, four Algorithm of channel hopping
+mechanisms are designed, such as Protocol 1, Protocol 2, Protocol 3
+and MAA. Our works can achieves higher percentage of channel
+utilization, Smaller value of MTTR, IRI, and ATTR with lower
+percentage of channel loading.
+\section{Future Directions}
+Some feature directions of Channel Hopping in CRN are\\
+\begin{itemize}
+    \item Spectrum sensing coexistence and sharing of multi-channel operations
+    among SUs and PUs.
+    \item Handle SUs mobility issues in CRN.
+    \item Network Security.
+    \item Increase degree of rendezvous specially in asymmetric
+    asynchronous scenario.
+    \item Establish a coordination among unauthorized SUs.
+    \item Avoid the coexistence issue between PUs and SUs.
+\end{itemize}
