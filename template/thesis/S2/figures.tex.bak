@@ -1,7 +1,0 @@
-\addcontentsline{toc}{chapter}{List of Figures}
-\listoffigures
-\begin{figure}[here]
-\centering
-\includegraphics[width=70mm, height= 50mm, keepaspectratio]{DH-MAC.eps}
-\caption{Rendezvous between two SUs in DH-MAC.} \label{fig:figure1}
-\end{figure}
